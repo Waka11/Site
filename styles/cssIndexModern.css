@@ -1,0 +1,110 @@
+body {
+    background: #dabf5d;
+    display: flex;
+}
+
+#parent {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    box-shadow: 7px -7px rgba(122, 122, 122, 0.5);
+    border-radius: 15px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.child {
+    border-radius: 15px;
+    cursor: pointer;
+    user-select: none;
+    margin: 10px;
+}
+
+.child:nth-child(2),
+.child:nth-child(3),
+.child:nth-child(4) {
+    background: #d5921a;
+    height: 50px;
+    text-align: center;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25pt;
+    padding: 3px;
+    box-shadow: 7px -7px rgba(122, 122, 122, 0.5);
+}
+
+.logo:hover {
+    box-shadow: none;
+}
+
+.child:nth-child(2):hover,
+.child:nth-child(3):hover,
+.child:nth-child(4):hover {
+    background: #5b5643;
+    box-shadow: none;
+}
+
+.child:nth-child(2):active,
+.child:nth-child(3):active,
+.child:nth-child(4):active {
+    font-size: 20pt;
+}
+
+#roller {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #dabf5d;
+}
+
+.switch-btn {
+    display: inline-block;
+    width: 72px;
+    height: 38px;
+    border-radius: 19px;
+    background: #bfbfbf;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 300ms;
+}
+
+.switch-btn::after {
+    content: "";
+    height: 32px;
+    width: 32px;
+    border-radius: 17px;
+    background: #fff;
+    top: 3px;
+    left: 3px;
+    transition-duration: 300ms;
+    position: absolute;
+    z-index: 1;
+}
+
+.switch-off {
+    background: #b10000;
+}
+
+.switch-on {
+    background: #118c4e;
+}
+
+.switch-on::after {
+    left: 37px;
+}

@@ -1,0 +1,246 @@
+body {
+    background: #96c2e2;
+    display: flex;
+}
+
+header {
+    margin-top: 10px;
+    box-shadow: 7px -7px #ecebf0;
+    border-radius: 30px 5px;
+    padding: 10px;
+    padding-bottom: 0;
+    height: 45px;
+    background: #194561;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25pt;
+}
+
+main {
+    border-radius: 30px 5px;
+    padding: 10px;
+    color: white;
+    background: #194561;
+    font-family: 'Oswald', sans-serif;
+}
+
+li {
+    margin-right: 5px;
+    border-radius: 25px 5px;
+    box-shadow: 7px -7px #ecebf0;
+    list-style-type: none;
+    background: #194561;
+    margin: 13px;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17pt;
+}
+
+
+#allIn{
+    margin-top: 10px;
+}
+#bookTour{
+    width:330px;
+    border-radius: 25px 5px;
+    background: #194561;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+form{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 0px;
+}
+form fieldset{
+    border-radius: 25px 5px;
+}
+form fieldset input, form fieldset select{
+    margin: 5px;
+}
+#days{
+    margin-left: 17px;
+}
+#reset{
+    float: right;
+}
+#conf, #reset{
+    border-radius: 25px 5px;
+    background: #06070d;
+    color: #ecebf0;
+    height: 30px;
+    margin-top: 15px;
+}
+#info{
+    border-radius: 30px 5px;
+    padding: 10px;
+    color: white;
+    background: #194561;
+    font-family: 'Oswald', sans-serif;
+    width:250px;
+    height: 50px;
+}
+#price{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+
+aside,
+#aside {
+    border-radius: 25px 5px;
+    font-size: 25pt;
+    background: #194561;
+}
+
+.hideThis{
+    display: none;
+}
+
+.showThis{
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #96c2e2;
+}
+
+li:hover {
+    background: #06070d;
+    box-shadow: none;
+}
+
+li:active {
+    font-size: 16pt;
+}
+
+li:nth-last-child(1) {
+    height: 55px;
+}
+
+i:hover {
+    color: #06070d;
+}
+
+i:active {
+    font-size: 23pt;
+}
+
+@media screen and (max-width:1920px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1020px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    #allIn{
+        display: flex;
+        justify-content: space-around;
+    }
+    #parent{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1020px;
+        margin: 0 auto;
+    }
+    #parent2 {
+        display: flex;
+        justify-content: center;
+    }
+    #parent3 {
+        display: flex;
+        flex-direction: row;
+        padding-top: 15px;
+        justify-content: space-between;
+    }
+    #in2 {
+        display: flex;
+    }
+    aside {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    aside a,
+    #aside a {
+        padding: 5px;
+    }
+    #aside {
+        display: none;
+    }
+}
+
+@media screen and (max-width:735px) {
+    #parent3 {
+        flex-direction: column;
+    }
+    #in3 {
+        display: flex;
+        justify-content: center;
+    }
+    aside {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 580px;
+    }
+    
+}
+
+@media screen and (max-width:660px){
+   #allIn{
+        justify-content: center;
+        align-content: space-between;
+        align-items: center;
+        flex-direction: column;
+   }
+}
+
+@media screen and (max-width:580px) {
+    #in2 {
+        flex-direction: column;
+    }
+    #in2 nav {
+        display: flex;
+        justify-content: center;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    aside {
+        display: none;
+    }
+    #in4 {
+        display: flex;
+        justify-content: center;
+    }
+    #aside {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        height: 132px;
+        width: 172px;
+    }
+    #aside div {
+        display: flex;
+        justify-content: center;
+    }
+}

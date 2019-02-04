@@ -1,0 +1,132 @@
+<html>
+
+<head>
+    <link name='css' rel="stylesheet" href="../styles/cssContactsClassic.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="image/gif" rel="shortcut icon" href="../images/kitty.gif" />
+    <link rel="stylesheet" href="../help/animate.css">
+    <link rel="stylesheet" href="../help/fontello.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='../scripts/jquery.maskedinput.min.js'></script>
+    <title>Контакти</title>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="parent2">
+            <header>
+                Контакти
+            </header>
+        </div>
+        <div id="parent3">
+            <div id="in2">
+                <nav>
+                    <ul>
+                        <li class="animated flipInX"><a href="../index.html">На головну</a></li>
+                        <li class="animated flipInX"><a href="../countries/countries.html">Країни</a></li>
+                        <li class="animated flipInX"><a href="../vacancies/vacancies.html">Вакансії</a></li>
+                        <li class="animated flipInX"><a href="../weare/weare.html">Про Cat Popular</a></li>
+                    </ul>
+                </nav>
+                <main>
+                    33000, Україна<br> м.Рівне, ул.18 Червня, 99<br>
+                    <br> тел: +38 (068) 675 82 55, (050) 375 18 09, (093) 881 05 59<br>
+                    <br> тел: +38 (044) 353 07 70, (0362) 430 495<br>
+                    <br> e-mail: tk.catpop@gmail.com<br>
+                    <br> Пон. - Нед .: 09:00 - 19:00<br>
+                    <br> Субота: 10:00 - 17:00<br>
+                    <br> Неділя: вихідний<br>
+                    <br> Менеджер Ніколетта Бірюкова<br> Skype: nicolette.biryukova<br> E-mail: nicolettacolumb@gmail.com<br>
+                </main>
+            </div>
+            <div id="in3">
+                <aside>
+                    <a href="#"><i class="icon-skype animate-spin"></i></a>
+                    <a href="#"><i class="icon-gmail"></i></a>
+                    <a href="#"><i class="icon-facebook-rect"></i></a>
+                    <a href="#"><i class="icon-twitter-bird"></i></a>
+                    <a href="#"><i class="icon-yandex-rect"></i></a>
+                    <a href="#"><i class="icon-vkontakte-rect"></i></a>
+                    <a href="#"><i class="icon-odnoklassniki-rect"></i></a>
+                    <a href="#"><i class="icon-youtube"></i></a>
+                    <a href="#"><i class="icon-instagram-filled"></i></a>
+                </aside>
+            </div>
+            <div id="in4">
+                <div id="aside">
+                    <div>
+                        <a href="#"><i class="icon-skype animate-spin"></i></a>
+                        <a href="#"><i class="icon-gmail"></i></a>
+                        <a href="#"><i class="icon-facebook-rect"></i></a>
+                    </div>
+                    <div>
+                        <a href="#"><i class="icon-twitter-bird"></i></a>
+                        <a href="#"><i class="icon-yandex-rect"></i></a>
+                        <a href="#"><i class="icon-vkontakte-rect"></i></a>
+                    </div>
+                    <div>
+                        <a href="#"><i class="icon-odnoklassniki-rect"></i></a>
+                        <a href="#"><i class="icon-youtube"></i></a>
+                        <a href="#"><i class="icon-instagram-filled"></i></a>
+                    </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='allIn'>
+        <div id='bookTour'>
+            <form name="forma">
+                <h4>Контактна інформація:</h4>
+                <fieldset name="raz">
+                    Прізвище:
+                    <input type="text" name="surname" placeholder="Введіть своє прізвище"><br>
+                    Ім'я:
+                    <input type="text" name="name" placeholder="Введіть своє ім'я"><br>
+                    № моб.:
+                    <input type="text" id="phone">
+                </fieldset>
+                <h4>Вибір туру:</h4>
+                <fieldset name='dva'>
+                    Країна:
+                    <select id="country"><br>
+                        <option value="300">Греція</option>
+                        <option value="350">Єгипет</option>
+                        <option value="375">Турція</option>
+                    </select>
+                    <br>
+                    Переліт:
+                    <select id="flight" size="1">
+                        <option value="750">Перший клас</option>
+                        <option value="500">Бізнес-клас</option>
+                        <option value="200">Економ-клас</option>
+                    </select>
+                    <br>
+                    Кільк. днів:
+                    <select id="days" size='1'>
+                        <option value="7">7 днів</option>
+                        <option value="14">14 днів</option>
+                        <option value="21">21 день</option>
+                    </select>
+                    <br>
+                    All inclusive:
+                    <input type="checkbox" name="allInc" value='1.5'>
+                </fieldset>
+                <input type="button" value="Підтвердити" id='conf'>
+                <input type='reset' value='Очистити' id='reset'>
+            </form>
+        </div>
+        <div id='info1' class='hideThis'>
+            <div id='info' class='hideThis animated flipInX'>
+                <p>
+                    Вартість туру: <span id='price'><span> 
+                </p>        
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src='../scripts/jsContacts.js'></script>
+
+</html>
